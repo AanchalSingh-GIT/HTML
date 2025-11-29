@@ -1,0 +1,63 @@
+
+
+
+
+<!--  for validation-to make sure user enters correct details. -->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateform(){
+            let name = document.getElementById("name").value;
+            let mobilenumber = document.getElementById("mobile").value;
+            let password = document.getElementById("pass").value;
+            let confirmpassword = document.getElementById("password").value;
+              
+        if (name=="" || mobilenumber=="" ||  password=="" || confirmpassword==""){
+            alert("all feilds are required")
+            return false;
+
+        }
+        else if(mobilenumber.length<10){
+            alert("mobile number should be 10 digits.")
+            return false;
+        }
+        else if(password !=confirmpassword){
+            alert("both should be same")
+            return false;
+        }
+        else{
+            alert("form submitted successfully")
+            return true;
+        }
+
+        }
+    </script>
+ 
+</head>
+<body> <h1>Student Registration Form</h1>
+    <form action=""  onsubmit=" return validateform()">
+        <label for="">Name:</label> <br>
+        <input type="text" id="name"> <br><br>
+        <label for="">Mobile Number:</label><br>
+        <input type="text" id="mobile"> <br><br>
+        <label for="">Password:</label> <br>
+        <input type="text" id="pass"> <br><br>
+        <label for="">Confirm Password:</label><br>
+        <input type="text" id="password"><br><br>
+        <button>Submit</button>
+        <button>Reset</button>
+    </form>
+</body>
+</html>

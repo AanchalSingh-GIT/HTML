@@ -1,0 +1,72 @@
+ <!-- EVENTS:-events are actions  that happens of web browser. 
+ TYPES:- 
+ keyboard EVENTS-that occurs when user interacts with the keyboard.
+      1.onclick- when user clicks on element
+      2.ondblclick-when user double clicks on element
+      3. onmouseover--cursor over the element.
+      4.onmouseout- when mouse leaves the element
+ mouse EVENTS -that occurs when user interacts with the mouse.
+ form EVENTS--that occurs when user interacts with the form. 
+      1.Onsubmit-when u submit ur form.
+      2.Onfocus- when u will click inside textbox.
+      3.Onblur- when u click outside the txtbox
+    4.Onchange-when value gets changed.
+    only diff is in onchange u have to write something first.
+ -->
+ 
+ 
+
+    
+
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function generatealert(){
+            alert("event occured");
+        }
+
+    </script>
+</head>
+<body>
+ <img src="Varanasiganga.jpg"  height="600" width="500" ondblclick="generatealert()">
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changecolor(){
+            document.getElementById("heading").style.color="red";
+        }
+        function resetcolor(){
+            document.getElementById("heading").style.color="black";
+
+        }
+    </script>
+</head>
+<body>
+    <h1 id="heading"  onmouseover="changecolor()" onmouseout="resetcolor()">Hover The Mouse Here.</h1>
+</body>
+</html>

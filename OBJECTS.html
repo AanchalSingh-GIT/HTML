@@ -1,0 +1,137 @@
+<!-- object-is a collection of multiple key value pair
+    reprented by {}
+declared by obj litral -->
+
+
+
+<!-- TO PRINT ENTIRE OBJ -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let student={
+            name:"Aanchal",
+            roll_number:29,
+            marks:100
+        }
+        console.log(student)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+
+
+<!-- TO PRINT NAME ONLY -->
+
+
+
+
+
+<!-- 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let student={
+            name:"Aanchal",
+            roll_number:29,
+            marks:100
+        }
+        // console.log(student.name)
+        console.log(student.roll_number)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>  -->
+
+
+
+
+
+ 
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let student={
+            name:"Aanchal",
+            roll_number:29,
+            marks:100
+        }
+        // console.log(student.name)
+        console.log(student.name+" having roll number" +student.roll_number+ "has scored" + student.marks)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>  -->
+
+
+
+
+ <!-- Template litral  remove contenation operators and commas
+ property with curly braces. -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Literal</title>
+
+    <script>
+        let student = {
+            name: "Aanchal",
+            rollnumber: 101,
+            marks: 95,
+            intro: function() {
+                return `Hi, I am ${this.name}.`;
+            }
+        };
+
+        // console.log(`${student.name} having roll no ${student.rollnumber} has scored ${student.marks} marks.`);
+
+        student.age = 23;   // adding property
+
+        // deleting a property
+        // delete student.rollnumber; 
+
+        // console.log(student.intro());     // calling method
+
+        // console.log(student);
+
+        console.log(student["marks"]);     // corrected typo
+
+        // console.log(student.name, "having roll no.", student.rollnumber, "has scored", student.marks, "marks");
+    </script>
+
+</head>
+<body>
+</body>
+</html>
